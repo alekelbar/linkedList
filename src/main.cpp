@@ -1,10 +1,14 @@
-#include "../include/dobleList.hpp"
+#include "../include/LinkedList.hpp"
 #include <iostream>
 
-int main(int argc, char const *argv[]) {
-  LinkedList list(1);
-  list.append(2);
-  list.append(3);
+int main(int argc, char const *argv[])
+{
+  LinkedList list;
+  list.at(2, 0);
+  list.at(3, 1);
+  list.at(5, 2);
+  list.watch();
+  list.removeAt(1);
   list.watch();
   return 0;
 }
